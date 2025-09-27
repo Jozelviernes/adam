@@ -39,20 +39,21 @@ function About(){
   ];
   
   const partners = [
-    { name: "Angelica", role: "Partner • Consulting", img: partnerImgs[0] },
-    { name: "Dessa", role: "Partner • Bookkeeping", img: partnerImgs[1] },
-    { name: "Angel", role: "Partner • Tax", img: "/image/angel.jpg"},
+      { name: "Angel", role: "Partner • Tax", img: "/image/angel.jpg"},
+    { name: "Angelica", role: "Partner • Consulting", img:"/image/angge.jpg" },
+    { name: "Dessa", role: "Partner • Bookkeeping", img:"/image/dessa.jpg"},
+  
     { name: "Madeline", role: "Partner • Strategy", img: partnerImgs[3] },
   ];
 
     return(
-  <section id="about" className="mt-15" ref={rAbout}>
+  <section id="about" ref={rAbout}>
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 lg:py-20">
           <div className="grid gap-10 lg:grid-cols-2 items-start">
             <div>
-              <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-slate-900">About ADAM Co.</h2>
+              <h2 className="text-4xl sm:text-5xl font-bold tracking-tight text-slate-900">About ADAM Co.</h2>
               <p className="mt-4 text-slate-600">
-                Founded by partners <strong>Angelica</strong>, <strong>Dessa</strong>, <strong>Angel</strong>, and{" "}
+                Founded by partners <strong>Angel</strong>, <strong>Dessa</strong>, <strong>Angelica</strong>, and{" "}
                 <strong>Madeline</strong>, our name embodies our principles: <strong>Accuracy</strong>,{" "}
                 <strong>Diligence</strong>, <strong>Accountability</strong>, and <strong>Mastery</strong>. We pair
                 technical rigor with a modern, human approach—so your numbers always tell a clear story.

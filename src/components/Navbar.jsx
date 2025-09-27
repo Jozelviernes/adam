@@ -27,7 +27,12 @@ const Navbar = () => {
      <header className="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-slate-200">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           <a href="#home" className="flex items-center gap-3">
-            <div className="h-8 w-8 rounded-xl bg-gradient-to-br from-sky-600 to-emerald-500 shadow-sm" />
+           <img 
+  src="/image/logo.jpg" 
+  alt="Logo" 
+  className="h-8 w-8 rounded-full object-cover"
+/>
+
             <span className="text-lg font-extrabold tracking-tight text-slate-900">ADAM Co.</span>
           </a>
 
