@@ -6,7 +6,9 @@ const RESEND_API_KEY = process.env.RESEND_API_KEY;
 
 // Optional: fail fast if missing key (helps debugging)
 if (!RESEND_API_KEY) {
-  console.warn("Missing RESEND_API_KEY. Add it to Vercel Env Vars and local .env");
+  console.warn(
+    "Missing RESEND_API_KEY. Add it to Vercel Env Vars and local .env"
+  );
 }
 
 const resend = new Resend(RESEND_API_KEY);
@@ -22,15 +24,15 @@ export default async function handler(req, res) {
 
     // Basic validation
     if (!name || !email || !message) {
-      return res.status(400).json({ error: "Please fill in name, email, and message." });
+      return res
+        .status(400)
+        .json({ error: "Please fill in name, email, and message." });
     }
 
     await resend.emails.send({
-    
-  from: "ADAM Co. <onboarding@resend.dev>",
+      from: "ADAM Co. <onboarding@resend.dev>",
 
-
-  to: ["viernesjozel18@gmail.com"],
+      to: ["viernesjozel6@gmail.com"],
 
       // ✅ reply goes directly to the customer
       replyTo: email,
